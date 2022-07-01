@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sun</title>
+
+    <style>
+        body {
+            background-color: #444;
+            animation: sky 10s infinite linear;
+        }
+
+        /*  0% i 100% w keyframes: */
+        .sun {
+        position: fixed; 
+        bottom: 15%;
+        left: 10%; 
+        width: 15vw; 
+        height: 15vw; 
+        background-color: darkred;
+        border-radius: 50%;
+        animation: sun 10s infinite linear;
+        }
+        
+        /*  0% i 100% w keyframes: */
+        .grass {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 30vh;
+        background-color: #222;
+        animation: grass 10s infinite linear;
+        }
+
+        @keyframes sky {
+            20% {
+                background-color: rgb(112, 94, 97);
+            }
+
+            50% {
+                background-color: lightblue;
+            }
+
+            80% {
+                background-color: rgb(112, 94, 97);
+            }
+        }
+        @keyframes grass {
+            20% {
+                background-color: green;
+            }
+
+            50% {
+                background-color: lightgreen;;
+            }
+
+            80% {
+                background-color: green;
+            }
+        }
+
+        @keyframes sun {
+            0% {
+                bottom: 15%;
+                left: 10%;
+                background-color: darkred;
+            }
+
+            50% {
+                bottom: 45%;
+                background-color: yellow;;
+            }
+
+            100% {
+                bottom: 15%;
+                left: 95%;
+                background-color: darkred;
+
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="sun"></div>
+    <div class="grass"></div>
+</body>
+
+</html>
